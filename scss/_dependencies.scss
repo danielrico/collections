@@ -1,0 +1,23 @@
+/* Micro clearfix */
+@mixin cf{
+  &:before, &:after {content:"";display:table;}
+  &:after {clear:both;}
+  & {zoom:1;}
+}
+
+/* Float alternative. About whitespace : http://css-tricks.com/fighting-the-space-between-inline-block-elements */
+@mixin inlineblock{
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: top;
+}
+/* Responsive images : parent element's full width */
+@mixin fullwidth{
+  height: auto;
+  width: 100%;
+}
+
+/* Main theme colors */
+$primary-color: /*#214c86;*/ #054f6c;
+$secondary-color: #dedad6;

@@ -1,0 +1,39 @@
+@media screen and (max-width: 1359px) {
+
+  .wrapper{
+    padding: 0 4%;
+  }
+  .post{
+    width: 31%;
+  }
+
+}
+
+@media screen and (max-width: 880px) {
+  
+  .post{
+    height: 380px;
+    width: 47.5%;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+
+  .post{
+    height: auto;
+    margin-bottom: 4%;
+    width: 100%;
+    .text{
+      > p{
+        margin-bottom: 40px;
+      }
+      span{
+        bottom: auto;
+        left: auto;
+        position: relative;
+      }
+    }
+  }
+  
+}

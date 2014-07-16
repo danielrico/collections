@@ -1,0 +1,206 @@
+html, body{
+  height: 100%;
+}
+html{
+  background: #054F6C;
+  overflow: hidden;
+}
+body{
+  background: $secondary-color;
+  font-family: 'Source Sans Pro', sans-serif;
+  overflow-x: hidden;
+}
+a{
+  color: $primary-color;
+}
+.wrapper{
+  margin: 0 auto;
+  max-width: 1280px;
+}
+header{
+  border-bottom: 1px solid rgba(255,255,255,.3);
+  margin: 0 auto 30px auto;
+  padding: 15px 0 15px 0;
+  #menu_trigger{
+    cursor: pointer;
+    margin: 1px 0 0 15px;
+    position: absolute;
+  }
+  #logo{
+    text-align: center;
+  }
+  nav{
+    left: 0;
+    height: 100%;
+    padding: 13px 20px;
+    position: absolute;
+    top: 0;
+    width: 200px;
+    z-index: -1;
+    .search-form{
+      margin-bottom: 1em;
+      label span{
+        display: none;
+      }
+      .search-field{
+        border-radius: 1px;
+        font-size: .9em;
+        padding: 2px;
+        width: 100%;
+      }
+      .search-submit{
+        display: none;
+      }
+    }
+    li{
+      margin-bottom: .5em;
+      a{
+        color: white;
+        font-size: .9em;
+      }
+      &.current-cat a{
+        color: rgba(255,255,255,.75);
+      }
+    }
+  }
+}
+.post{
+  background: white;
+  height: 340px;
+  margin: 0 1% 2.5% 1%;
+  position: relative;
+  width: 22.5%;
+  @include inlineblock;
+  .thumbnail{
+    background: #f6f6f6;
+    height: 160px;
+    overflow: hidden;
+  }
+  img{
+    @include fullwidth;
+  }
+  .text{
+    padding: 15px 20px;
+    > span{
+      background: url(img/icon_date.svg) left no-repeat;
+      bottom: 15px;
+      color: #333;
+      display: block;
+      font-size: .8em;
+      right: 20px;
+      opacity: .4;
+      padding-left: 16px;
+      position: absolute;
+    }
+  }
+  h1 a{
+    color: black;
+    display: block;
+    font-size: .9em;
+    font-weight: 600;
+    line-height: 1.4em;
+    margin-bottom: 10px;
+  }
+  p{
+    color: #888;
+    font-size: .9em;
+    line-height: 1.35em;
+    margin-bottom: 15px;
+  }
+  .curated_from{
+    bottom: 15px;
+    left: 20px;
+    position: absolute;
+    p{
+      margin: 0;
+      a{
+        color: #666;
+        font-size: .9em;
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  .post_category{
+    bottom: 13px;
+    right: 18px;
+    position: absolute;
+    a{
+      display: block;
+      height: 26px;
+      text-indent: -9999em;
+      width: 28px;
+    }
+  }
+  .design a{
+    background: url(img/icons_categories.svg) 127px top;
+  }
+  .technology a{
+    background: url(img/icons_categories.svg) 160px top;
+  }
+  .development a{
+    background: url(img/icons_categories.svg) 94px top;
+  }
+  .entertainment a{
+    background: url(img/icons_categories.svg) 61px top;
+  }
+  .random-stuff a{
+    background: url(img/icons_categories.svg) 28px top;
+  }
+}
+#category_title{
+  font-size: 1.5em;
+  font-weight: 600;
+  margin: 0 0 30px 1%;
+}
+#pager{
+  margin: 2% 0;
+  text-align: center;
+  div{
+    @include inlineblock;
+    a{
+      border: 1px solid #aaa;
+      border-radius: 2px;
+      color: #666;
+      font-size: .85em;
+      margin: 0 5px;
+      padding: 5px 10px;
+    }
+  }
+}
+
+#no_content{
+  margin: 0 0 30px 1%;
+}
+
+footer{
+  padding-bottom: 20px;
+}
+#about{
+  color: #999;
+  font-size: .85em;
+  margin: 0 1%;
+}
+
+iframe{
+  background: #FFF;
+  border: 0;
+  height: 100%;
+  position: absolute;
+  right: -66%;
+  top: 0;
+  width: 66%;
+  z-index: 102;
+}
+#overlay{
+  background: rgba(0,0,0,.33);
+  display: none;
+  height: 100%;
+  left: 0;
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}

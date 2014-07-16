@@ -1,0 +1,124 @@
+/*
+Theme Name: Collections
+Description : A special theme working with expresscurate plugin : http://www.expresscurate.com
+Author: Daniel Rico
+Author URI: http://www.daniel-rico.com
+*/
+/* Dependencies */
+html, body, div, span, object, h1, h2, h3, h4, h5, h6, p, a, em, img, dl, dt, dd, ol, ul, li, fieldset, form, legend, label, input, textarea, button { margin: 0; padding: 0; border: 0; outline: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline; font-weight: normal; }
+
+:focus { outline: none; }
+
+a { text-decoration: none; }
+
+ol, ul { list-style: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+textarea { overflow: auto; }
+
+/*removes IE scrollbar */
+img { vertical-align: top; }
+
+/* Drupal */
+ul li.leaf, ul li.expanded, ul li.collapsed, ul.menu li, .item-list ul li, .block ul, ul.tabs { list-style-type: none; list-style-image: none; margin: 0; padding: 0; }
+
+input, select, textarea { vertical-align: middle; }
+
+tr.even, tr.odd { background: none; border: 0; padding: 0; }
+
+.grippie { display: none; }
+
+.form-item, .form-actions, .panel-2col-stacked .panel-separator { margin: 0; padding: 0; }
+
+.form-submit { cursor: pointer; }
+
+/* Clearfix as a class */
+.cf:before, .cf:after { content: ""; display: table; }
+
+.cf:after { clear: both; }
+
+.cf { zoom: 1; }
+
+/* HTML 5 */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary { display: block; }
+
+audio, canvas, video { display: inline-block; }
+
+audio:not([controls]) { display: none; height: 0; }
+
+/* Box model */
+*, *:before, *:after { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+/* Text rendering */
+html { font-family: "sans-serif"; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; -webkit-font-smoothing: antialiased; }
+
+/* Micro clearfix */
+/* Float alternative. About whitespace : http://css-tricks.com/fighting-the-space-between-inline-block-elements */
+/* Responsive images : parent element's full width */
+/* Main theme colors */
+/* Main styles */
+html, body { height: 100%; }
+
+html { background: #054F6C; overflow: hidden; }
+
+body { background: #dedad6; font-family: 'Source Sans Pro', sans-serif; overflow-x: hidden; }
+
+a { color: #054f6c; }
+
+.wrapper { margin: 0 auto; max-width: 1280px; }
+
+header { border-bottom: 1px solid rgba(255, 255, 255, 0.3); margin: 0 auto 30px auto; padding: 15px 0 15px 0; }
+header #menu_trigger { cursor: pointer; margin: 1px 0 0 15px; position: absolute; }
+header #logo { text-align: center; }
+header nav { left: 0; height: 100%; padding: 13px 20px; position: absolute; top: 0; width: 200px; z-index: -1; }
+header nav .search-form { margin-bottom: 1em; }
+header nav .search-form label span { display: none; }
+header nav .search-form .search-field { border-radius: 1px; font-size: .9em; padding: 2px; width: 100%; }
+header nav .search-form .search-submit { display: none; }
+header nav li { margin-bottom: .5em; }
+header nav li a { color: white; font-size: .9em; }
+header nav li.current-cat a { color: rgba(255, 255, 255, 0.75); }
+
+.post { background: white; height: 340px; margin: 0 1% 2.5% 1%; position: relative; width: 22.5%; display: inline-block; *display: inline; *zoom: 1; vertical-align: top; }
+.post .thumbnail { background: #f6f6f6; height: 160px; overflow: hidden; }
+.post img { height: auto; width: 100%; }
+.post .text { padding: 15px 20px; }
+.post .text > span { background: url(img/icon_date.svg) left no-repeat; bottom: 15px; color: #333; display: block; font-size: .8em; right: 20px; opacity: .4; padding-left: 16px; position: absolute; }
+.post h1 a { color: black; display: block; font-size: .9em; font-weight: 600; line-height: 1.4em; margin-bottom: 10px; }
+.post p { color: #888; font-size: .9em; line-height: 1.35em; margin-bottom: 15px; }
+.post .curated_from { bottom: 15px; left: 20px; position: absolute; }
+.post .curated_from p { margin: 0; }
+.post .curated_from p a { color: #666; font-size: .9em; }
+.post .curated_from p a:hover { text-decoration: underline; }
+.post .post_category { bottom: 13px; right: 18px; position: absolute; }
+.post .post_category a { display: block; height: 26px; text-indent: -9999em; width: 28px; }
+.post .design a { background: url(img/icons_categories.svg) 127px top; }
+.post .technology a { background: url(img/icons_categories.svg) 160px top; }
+.post .development a { background: url(img/icons_categories.svg) 94px top; }
+.post .entertainment a { background: url(img/icons_categories.svg) 61px top; }
+.post .random-stuff a { background: url(img/icons_categories.svg) 28px top; }
+
+#category_title { font-size: 1.5em; font-weight: 600; margin: 0 0 30px 1%; }
+
+#pager { margin: 2% 0; text-align: center; }
+#pager div { display: inline-block; *display: inline; *zoom: 1; vertical-align: top; }
+#pager div a { border: 1px solid #aaa; border-radius: 2px; color: #666; font-size: .85em; margin: 0 5px; padding: 5px 10px; }
+
+#no_content { margin: 0 0 30px 1%; }
+
+footer { padding-bottom: 20px; }
+
+#about { color: #999; font-size: .85em; margin: 0 1%; }
+
+iframe { background: #FFF; border: 0; height: 100%; position: absolute; right: -66%; top: 0; width: 66%; z-index: 102; }
+
+#overlay { background: rgba(0, 0, 0, 0.33); display: none; height: 100%; left: 0; overflow: auto; position: fixed; top: 0; width: 100%; z-index: 2; }
+
+/* Media queries */
+@media screen and (max-width: 1359px) { .wrapper { padding: 0 4%; }
+  .post { width: 31%; } }
+@media screen and (max-width: 880px) { .post { height: 380px; width: 47.5%; } }
+@media screen and (max-width: 480px) { .post { height: auto; margin-bottom: 4%; width: 100%; }
+  .post .text > p { margin-bottom: 40px; }
+  .post .text span { bottom: auto; left: auto; position: relative; } }

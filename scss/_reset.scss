@@ -1,0 +1,59 @@
+ html, body, div, span, object, h1, h2, h3, h4, h5, h6, p, a, em, img, dl, dt, dd, ol, ul, li, fieldset, form, legend, label, input, textarea, button {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   outline: 0;
+   font-weight: inherit;
+   font-style: inherit;
+   font-size: 100%;
+   font-family: inherit;
+   vertical-align: baseline;
+   font-weight:normal;
+}
+
+:focus {outline: none;}
+a{text-decoration:none;}
+ol, ul {list-style: none;}
+table {border-collapse: collapse;border-spacing: 0;}
+textarea {overflow:auto;} /*removes IE scrollbar */
+img{vertical-align: top;}
+
+/* Drupal */
+ul li.leaf, ul li.expanded, ul li.collapsed, ul.menu li, .item-list ul li, .block ul, ul.tabs{list-style-type: none; list-style-image: none; margin: 0; padding: 0;}
+input, select, textarea{vertical-align: middle;}
+tr.even, tr.odd{background: none;border: 0;padding: 0;}
+.grippie{display: none;}
+.form-item, .form-actions, .panel-2col-stacked .panel-separator{margin:0;padding:0;}
+.form-submit{cursor: pointer;}
+
+/* Clearfix as a class */
+.cf:before, .cf:after {content:"";display:table;}
+.cf:after {clear:both;}
+.cf {zoom:1;}
+
+/* HTML 5 */
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary {
+    display: block;
+}
+audio,canvas,video {
+    display: inline-block;
+}
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+/* Box model */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box; 
+  box-sizing: border-box;
+}
+
+/* Text rendering */
+html {
+  font-family: "sans-serif";
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+}
