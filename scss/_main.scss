@@ -79,6 +79,9 @@ header{
   img{
     @include fullwidth;
   }
+  .thumbnail{
+    @include cover;
+  }
   .text{
     padding: 15px 20px;
     > span{

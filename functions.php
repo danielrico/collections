@@ -19,6 +19,17 @@ function register_my_menus() {
 }
 add_action( 'init', 'register_my_menus' );
 
+// custom fields
+add_action('wp_insert_post', 'wpc_custom_fields');
+  function wpc_custom_fields($post_id)
+{
+if ( $_GET['post_type'] = 'post' ) {
+  add_post_meta($post_id, 'url_title', '', true);
+  add_post_meta($post_id, 'url_link', '', true);
+}
+  return true;
+}
+
 // enqueue scripts
 function my_scripts_loader() {
     wp_deregister_script( 'jquery' );

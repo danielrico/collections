@@ -56,6 +56,7 @@ html { font-family: "sans-serif"; -webkit-text-size-adjust: 100%; -ms-text-size-
 /* Micro clearfix */
 /* Float alternative. About whitespace : http://css-tricks.com/fighting-the-space-between-inline-block-elements */
 /* Responsive images : parent element's full width */
+/* img cover */
 /* Main theme colors */
 /* Main styles */
 html, body { height: 100%; }
@@ -83,6 +84,7 @@ header nav li.current-cat a { color: rgba(255, 255, 255, 0.75); }
 .post { background: white; height: 340px; margin: 0 1% 2.5% 1%; position: relative; width: 22.5%; display: inline-block; *display: inline; *zoom: 1; vertical-align: top; }
 .post .thumbnail { background: #f6f6f6; height: 160px; overflow: hidden; }
 .post img { height: auto; width: 100%; }
+.post .thumbnail { background-repeat: no-repeat; background-position: center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
 .post .text { padding: 15px 20px; }
 .post .text > span { background: url(img/icon_date.svg) left no-repeat; bottom: 15px; color: #333; display: block; font-size: .8em; right: 20px; opacity: .4; padding-left: 16px; position: absolute; }
 .post h1 a { color: black; display: block; font-size: .9em; font-weight: 600; line-height: 1.4em; margin-bottom: 10px; }

@@ -3,12 +3,6 @@ jQuery(document).ready(function ($) {
   // "All" category is active on homepage
   $("body.home").find("header li:first-child").addClass("current-cat");
 
-  // external link reproduction on other html elements
-  $(".post").each(function(){  
-    var link = $(this).find(".curated_from a" ).attr( "href" );
-    $(this).find(".thumbnail a, .text h1 a").attr( "href", link );
-  });
-
   // menu animation
   $("header").on("click", "#menu_trigger", function(){
     if($("body").hasClass("menu_active")){
@@ -18,9 +12,6 @@ jQuery(document).ready(function ($) {
       $("body").addClass("menu_active").animate({marginLeft: "200px"},400);
     }
   });
-
-  // display article in iframe
-  $("h1 a, .thumbnail a").attr("target", "read_article");
 
   // iframe animation
   $(".post").on("click", "h1 a, .thumbnail a", function(){
@@ -50,7 +41,6 @@ jQuery(document).ready(function ($) {
     $("#overlay")
       .fadeOut(300);
   });
-
 
   
 

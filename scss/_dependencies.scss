@@ -18,6 +18,16 @@
   width: 100%;
 }
 
+/* img cover */
+@mixin cover{
+  background-repeat: no-repeat; 
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 /* Main theme colors */
 $primary-color: /*#214c86;*/ #054f6c;
 $secondary-color: #dedad6;

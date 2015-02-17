@@ -7,22 +7,33 @@ query_posts('posts_per_page=24&paged=' . $paged);
 
 <?php if(have_posts()) : ?>
   <?php while(have_posts()) : the_post(); ?>
+  
+  <?php $link = get_post_meta($post->ID, 'url_link', true); ?>
+  <?php $title = get_post_meta($post->ID, 'url_title', true); ?>
+  <?php $thumb_url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
+  
   <div id="post-<?php the_ID(); ?>" class="post">
-      <div class="thumbnail">
-        <a href="">
-          <?php
+      <div class="thumbnail" style="background-image:url(
+       <?php
             if ( has_post_thumbnail() ) {
-              the_post_thumbnail();
+              echo $thumb_url; 
             }
             else {
-              echo '<img src="' . get_bloginfo( 'stylesheet_directory' ) . '/img/default_thumbnail.png" alt="illustration" />';
+              echo get_bloginfo( 'stylesheet_directory' ) . '/img/default_thumbnail.png';
             }
-          ?>
-        </a>
+       ?>);">
+        <a target="read_article" href="<?php echo $link; ?>"></a>
       </div>
       <div class="text">
-        <h1><a href=""><?php the_title(); ?></a></h1><?php expresscurate_the_source_url ?><?php echo expresscurate_the_source_urls(); ?>
+        <h1><a target="read_article" href="<?php echo $link; ?>"><?php the_title(); ?></a></h1>
         <?php the_content(); ?>
+         
+        <div class="curated_from">
+          <p><a href="<?php echo $link; ?>">
+            <?php echo $title; ?>
+          </a></p>
+        </div>
+                        
         <div class="post_category <?php $category = get_the_category(); echo $category[0]->slug; ?>"> 
           <?php the_category(', '); ?>
         </div>
