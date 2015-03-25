@@ -69,7 +69,7 @@ header{
   height: 340px;
   margin: 0 1% 2.5% 1%;
   position: relative;
-  width: 22.5%;
+  width: 22.8%;
   @include inlineblock;
   .thumbnail{
     background: #f6f6f6;
@@ -164,7 +164,7 @@ header{
   margin: 0 0 30px 1%;
 }
 #pager{
-  margin: 2% 0;
+  margin: 2% 0 4% 0;
   text-align: center;
   div{
     @include inlineblock;
@@ -185,6 +185,7 @@ header{
 
 footer{
   padding-bottom: 20px;
+  text-align: center;
 }
 #about{
   color: #999;

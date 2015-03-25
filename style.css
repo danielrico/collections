@@ -1,6 +1,7 @@
+@charset "UTF-8";
 /*
 Theme Name: Collections
-Description : A special theme working with expresscurate plugin : http://www.expresscurate.com
+Description : A mashup between a visual bookmarking website and a curated blog à la scoop.it
 Author: Daniel Rico
 Author URI: http://www.daniel-rico.com
 */
@@ -81,7 +82,7 @@ header nav li { margin-bottom: .5em; }
 header nav li a { color: white; font-size: .9em; }
 header nav li.current-cat a { color: rgba(255, 255, 255, 0.75); }
 
-.post { background: white; height: 340px; margin: 0 1% 2.5% 1%; position: relative; width: 22.5%; display: inline-block; *display: inline; *zoom: 1; vertical-align: top; }
+.post { background: white; height: 340px; margin: 0 1% 2.5% 1%; position: relative; width: 22.8%; display: inline-block; *display: inline; *zoom: 1; vertical-align: top; }
 .post .thumbnail { background: #f6f6f6; height: 160px; overflow: hidden; position: relative; }
 .post .thumbnail a { position: absolute; width: 100%; height: 100%; }
 .post img { height: auto; width: 100%; }
@@ -104,13 +105,13 @@ header nav li.current-cat a { color: rgba(255, 255, 255, 0.75); }
 
 #category_title { font-size: 1.5em; font-weight: 600; margin: 0 0 30px 1%; }
 
-#pager { margin: 2% 0; text-align: center; }
+#pager { margin: 2% 0 4% 0; text-align: center; }
 #pager div { display: inline-block; *display: inline; *zoom: 1; vertical-align: top; }
 #pager div a { border: 1px solid #aaa; border-radius: 2px; color: #666; font-size: .85em; margin: 0 5px; padding: 5px 10px; }
 
 #no_content { margin: 0 0 30px 1%; }
 
-footer { padding-bottom: 20px; }
+footer { padding-bottom: 20px; text-align: center; }
 
 #about { color: #999; font-size: .85em; margin: 0 1%; }
 
