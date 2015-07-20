@@ -1,7 +1,7 @@
 collections
 ===========
 
-Demo : http://daniel-rico.com/collections
+Demo : http://collections.daniel-rico.com
 
 Collections is a wordpress theme. It's a mashup between a visual bookmarking website and a curated blog à la scoop.it
 
